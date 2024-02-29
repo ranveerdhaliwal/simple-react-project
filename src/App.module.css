@@ -1,0 +1,63 @@
+/* I ended up putting all the styles in this one file for convenience sake
+   but they would live with their associated components ideally 
+*/
+
+/* counter styles */
+.counter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  .label {
+    font-size: 48px;
+    margin: 0px 12px 0px 12px;
+    min-width: 100px;
+    text-align: center;
+  }
+}
+
+  
+.button {
+  font-size: 24px;
+  color: white;
+  background-color: steelblue;
+  border-radius: 8px;
+  border: none;
+  width: 32px;
+  padding: 8px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+/* Traffic light styles */
+.trafficLight {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  border-radius: 20px;
+  padding: 4px 10px 10px 10px;
+  
+  .light {
+    width: 64px;
+    height: 64px;
+    border-radius: 30px;
+    background-color: gray;
+    margin-top: 8px;
+    margin-left: 8px;
+
+    /* we'll use these classes to mark a light as active */
+    &.red {
+      background-color: red;
+    }
+    &.yellow {
+      background-color: yellow;
+    }
+    &.green {
+      background-color: green;
+    }
+  }
+}
+
