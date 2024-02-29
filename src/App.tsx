@@ -31,10 +31,8 @@ const App = () => {
     setTotalCounterClicks((prevState) => prevState + 1);
   }, []);
 
-
-
   return (
-    <div className={styles.app}>
+    <div>
 
       <h1>Ranveer Dhaliwal</h1>
 
@@ -57,7 +55,6 @@ const App = () => {
       <div className={styles.trafficLightRow}>
         <TrafficLight state={{ value: counter1Value, label: "Traffic Light (hooked up to first counter)" }} />
       </div>
-
 
     </div>
   )

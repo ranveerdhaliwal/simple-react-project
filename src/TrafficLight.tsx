@@ -30,6 +30,7 @@ const TrafficLight = ({ state }: Props) => {
     <div className={styles.trafficLight}>
       {/* 
         using the active light variable above to determine which light is active
+        Normally I'd used classnames or clsx to conditionally add css classes
         There is probably a better way to optimize this but this was the first thing I thought of
         I'm sure I'll think of a better way right after I submit this :)
       */}
